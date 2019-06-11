@@ -10,7 +10,7 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
-mongoose.connect("mongodb://ig:ig1234@ds235947.mlab.com:35947/ig", {
+mongoose.connect(MONGODB_URL, {
   useNewUrlParser: true
 });
 
